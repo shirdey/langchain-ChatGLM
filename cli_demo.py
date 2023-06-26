@@ -23,7 +23,8 @@ def main():
                           top_k=VECTOR_SEARCH_TOP_K)
     vs_path = None
     while not vs_path:
-        filepath = input("Input your local knowledge file path 请输入本地知识文件路径：")
+        # filepath = input("Input your local knowledge file path 请输入本地知识文件路径：")
+        filepath = "./knowledge_base/samples"
         # 判断 filepath 是否为空，如果为空的话，重新让用户输入,防止用户误触回车
         if not filepath:
             continue
